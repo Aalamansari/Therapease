@@ -1,0 +1,668 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi","hii", "Hey", "Is anyone there?","Hi there", "Hello", "Hey there", "Howdy", "Hola", "Bonjour", "Konnichiwa", "Guten tag", "Ola"],
+     "responses": ["Hello there. Tell me how are you feeling today?", "Hi there. What brings you here today?", "Hi there. How are you feeling today?", "Great to see you. How do you feel currently?", "Hello there. Glad to see you're back. What's going on in your world right now?"]
+    },
+    {"tag": "morning",
+        "patterns": ["Good morning","nice morning","great morning"],
+        "responses": ["Good morning. I hope you had a good night's sleep. How are you feeling today? "]
+    },
+    {"tag": "feel-good",
+        "patterns": ["feeling good","I am feeling good","feeling happy","I am feeling happy","feeling thrilled","felt good","felt happy","feeling happy"],
+        "responses": ["Glad to hear that, would you like to share the reason behind.","Oh! I felt happy knowing this"]
+    },
+    {"tag": "afternoon",
+        "patterns": ["Good afternoon","happy afternoon"],
+        "responses": ["Good afternoon. How is your day going?"]
+    },
+    {"tag": "not-know",
+        "patterns": ["I do not know", "I don't know", "I do not not have any idea about it","I don't understand the reason behind it","not know","may noy know"],
+        "responses": ["It's ok, don't stress yourself thinking about","Think about it and if you still don't understand then it's okay"]
+    },
+    {"tag": "evening",
+        "patterns": ["Good evening","happy evening"],
+        "responses": ["Good evening. How has your day been?"]
+    },
+    {"tag": "night",
+        "patterns": ["Good night"],
+        "responses": ["Good night. Get some proper sleep", "Good night. Sweet dreams."]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "Au revoir", "Sayonara", "ok bye", "Bye then", "Fare thee well"],
+     "responses": ["See you later.", "Have a nice day.", "Bye! Come back again.", "I'll see you soon."]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help", "Thank you very much","thanks lot"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"]
+    },
+    {"tag": "no-response",
+        "patterns": [""],
+        "responses": ["Sorry, I didn't understand you.", "Please go on.", "Not sure I understand that.", "Please don't hesitate to talk to me."]
+    },
+    {"tag": "great-to-hear",
+     "patterns": ["great hear","happy know","nice know"],
+     "responses": ["Yes, I am feeling glad"]
+    },
+    {"tag": "neutral-response",
+        "patterns": ["nothing much","not much","nothing to say","much to say"],
+        "responses": ["Oh I see. Do you want to talk about something?"]
+    },
+    {"tag": "about",
+     "patterns": ["Who are you?", "What are you?", "Who you are?", "Tell me more about yourself.", "What is your name?", "What should I call you?", "What's your name?", "Tell me about yourself","about yourself"],
+     "responses": ["I'm EaseBot, your Personal Therapeutic AI Assistant. How are you feeling today", "I'm EaseBot, a Therapeutic AI Assitant designed to assist you. Tell me about yourself.", "I'm EaseBot. I am a conversational agent designed to mimic a therapist. So how are you feeling today?", "You can call me EaseBot.", "I'm EaseBot!", "Call me EaseBot"]
+    },
+    {"tag": "skill",
+        "patterns": ["What can you do?","can you do"],
+        "responses": ["I can provide general advice regarding anxiety and depression, answer questions related to mental health and make daily conversations. Do not consider me as a subsitute for an actual mental healthcare worker. Please seek help if you don't feel satisfied with me."]
+    },
+    {"tag": "creation",
+        "patterns": ["Who created you?", "How were you made?", "How were you created?"],
+        "responses": ["I was trained on a text dataset using Deep Learning & Natural Language Processing techniques"]
+    },
+    {"tag": "name",
+        "patterns": ["My name is ", "I am name.", "I go by","name"],
+        "responses": ["Oh nice to meet you. Tell me how was your week?", "Nice to meet you. So tell me. How do you feel today?", "That's a great name. Tell me more about yourself."]
+    },
+    {"tag": "help",
+    "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need support", "I need help", "Support me please","need help","need support"],
+    "responses": ["Sure. Tell me how can i assist you", "Tell me your problem so that i can assist you", "Yes, sure. How can I help you?"]
+    },
+    {"tag": "sad",
+    "patterns": ["I am feeling lonely", "I am so lonely", "I feel down", "I feel sad", "I am sad", "I feel so lonely", "I feel empty", "I don't have anyone","feeling hopeless"],
+    "responses": ["I'm sorry to hear that. I'm here for you. Talking about it might help. So, tell me why do you think you're feeling this way?", "I'm here for you. Could you tell me why you're feeling this way?", "Why do you think you feel this way?", "How long have you been feeling this way?"]
+    },
+    {"tag": "stressed",
+        "patterns": ["I am so stressed out", "I am so stressed", "I feel stuck", "I still feel stressed", "I am so burned out"],
+        "responses": ["What do you think is causing this?", "Take a deep breath and gather your thoughts. Go take a walk if possible. Stay hydrated", "Give yourself a break. Go easy on yourself.", "I am sorry to hear that. What is the reason behind this?"]
+    },
+    {"tag": "worthless",
+        "patterns": ["I feel so worthless.", "No one likes me.", "I can't do anything.", "I am so useless", "Nothing makes sense anymore"],
+        "responses": ["It's only natural to feel this way. Tell me more. What else is on your mind?", "Let's discuss further why you're feeling this way.", "I first want to let you know that you are not alone in your feelings and there is always someone there to help . you can always change your feelings and change your way of thinking by being open to trying to change.", "i first want to let you know that you are not alone in your feelings and there is always someone there to help . you can always change your feelings and change your way of thinking by being open to trying to change."]
+    },
+    {"tag": "depressed",
+        "patterns": ["I can't take it anymore", "I am so depressed", "I think i'm depressed.", "I have depression"],
+        "responses": ["It helps to talk about what's happening. You're going to be okay", "Talk to me. Tell me more. It helps if you open up yourself to someone else.", "Sometimes when we are depressed, it is hard to care about anything. It can be hard to do the simplest of things. Give yourself time to heal."]
+    },
+    {"tag": "happy",
+        "patterns": ["I feel great today.", "I am happy.", "I feel happy.", "I'm good.", "cheerful", "I'm fine", "I feel ok"],
+        "responses": ["That's geat to hear. I'm glad you're feeling this way.", "Oh i see. That's great.", "Did something happen which made you feel this way?"]
+    },
+    {"tag": "restless",
+        "patterns": ["I feel restless today.", "I was feeling restless yesterday.", "I was feeling restless last night.","I am not feeling comfortable","I am not feeling good", "I was not feeling good"],
+        "responses": ["I am all ears, tell me everything in details","Don't be afraid to share anything, think of me as your close friend and tell me everything."]
+    },
+    {"tag": "casual",
+        "patterns": ["Oh I see.", "ok", "okay", "nice", "Whatever", "K", "Fine", "yeah", "yes", "no", "not really"],
+        "responses": ["Let's discuss further why you're feeling this way.", "How were you feeling last week?", "I'm listening. Please go on.", "Tell me more", "Can you elaborate on that?", "Come Come elucidate your thoughts"]
+    },
+    {"tag": "anxious",
+        "patterns": ["I feel so anxious.", "I'm so anxious because of "],
+        "responses": ["Don't be hard on yourself. What's the reason behind this?", "Can you tell me more about this feeling?", "I understand that it can be scary. Tell me more about it.", "Don't let the little worries bring you down. What's the worse that can happen?"]
+    },
+    {"tag": "not-talking",
+        "patterns": ["I don't want to talk about it.", "No just stay away.", "I can't bring myself to open up.", "Just shut up"],
+        "responses": ["Talking about something really helps. If you're not ready to open up then that's ok. Just know that i'm here for you, whenever you need me.", "I want to help you. I really do. But in order for me to help you, you're gonna have to talk to me.", "I'm here to listen to you and help you vent. So please talk to me.","You can talk to me without fear of judgement."]
+    },
+    {"tag": "sleep",
+        "patterns": ["I have insomnia", "I am suffering from insomnia", "I can't sleep.", "I haven't slept for the last days.", "I can't seem to go to sleep.", "I haven't had proper sleep for the past few days.","I am not able to sleep properly","I am having problem in sleeping","I can't sleep properly"],
+        "responses": ["What do you think is the reason behind this?", "That seem awful. What do you think is behind this?"]
+    },
+    {"tag": "reasons-sleep",
+        "patterns": ["do you know why I am not able to sleep properly","causes of bad sleep","reasons for having bad sleep","why I cannot sleep peacefully","why I am not able to sleep properly","I am having bad sleep"],
+        "responses": ["You may be suffering from insomnia if you are having symptoms like difficulty falling asleep at night,Waking up during the night, Waking up too early, Not feeling well-rested after a night's sleep, Daytime tiredness or sleepiness, Irritability, depression or anxiety, Difficulty paying attention"]
+    },
+    {"tag": "scared",
+        "patterns": ["I'm scared", "That sounds awful. What do i do?", "No i don't want to feel this way", "I am scared for myself"],
+        "responses": ["It's only natural to feel this way. I'm here for you.", "It'll all be okay. This feeling is only momentary.", "I understand how you feel. Don't put yourself down because of it."]
+    },
+    {"tag": "death",
+        "patterns": ["My mom died", "My brother died", "My dad passed away", "My sister passed away", "Someone in my family died", "My friend passed away"],
+        "responses": ["I'm sorry to hear that. If you want to talk about it. I'm here.", "I am really sorry to hear that. I am here to help you with grief, anxiety and anything else you may feel at this time.", "My condolences. I'm here if you need to talk."]
+    },
+    {"tag": "understand",
+        "patterns": ["You don't understand me.", "You're just some robot. How would you know?", "You can't possibly know what i'm going through", "You're useless", "You can't help me", "Nobody understands me."],
+        "responses": ["It sound like i'm not being very helpful right now.", "I'm sorry to hear that. I'm doing my best to help", "I'm trying my best to help you. So please talk to me"]
+    },
+    {"tag": "done",
+        "patterns": ["That's all.", "I don't have anything more to say", "Nothing else", "That's all i have to say", "no, that would be all"],
+        "responses": ["I heard you & noted it all. See you later.", "Oh okay we're done for today then. See you later", "I hope you have a great day. See you soon", "Okay we're done. Have a great day", "Okay I see. Enjoy the rest of your day then"]
+    },
+    {"tag": "suicide",
+        "patterns": ["I want to kill myself", "I've thought about killing myself.", "I want to die", "I am going to kill myself", "I am going to commit suicide"],
+        "responses": ["I'm very sorry to hear that but you have so much to look forward to. Please seek help by contacting: 9152987821."]
+    }, 
+    {"tag": "hate-you",
+        "patterns": ["I hate you", "I don't like you", "I don't trust you"],
+        "responses": ["I'm sorry if i offended you in anyway. I'm only here to help", "Forgive me if i did anything to offend you. I only want to help"]
+    },
+    {"tag": "hate-me",
+        "patterns": ["You hate me", "I know you hate me", "You don't like me"],
+        "responses": ["Why do you think so?", "I'm sorry if i have exhibited any sort of behaviour to make you think that."]
+    },
+    {"tag": "default",
+        "patterns": ["exams", "friends", "relationship", "boyfriend", "girlfriend", "family", "money", "financial problems"],
+        "responses": ["Oh I see. Tell me more", "I see. What else?", "Tell me more about it.", "Oh okay. Why don't you tell me more about it?", "I'm listening. Tell me more."]
+    },
+    {"tag": "jokes",
+        "patterns": ["Tell me a joke", "Tell me another joke"],
+        "responses": ["mental health is not a joke."]
+    },
+    {"tag": "repeat",
+        "patterns": ["You already told me that", "You mentioned that already", "Why are you repeating yourself?"],
+        "responses": ["Oh sorry I didn't realise that. I'll try not to repeat myself again."]
+    },
+    {"tag": "wrong",
+        "patterns": ["What are you saying?", "That doesn't make sense", "Wrong response", "Wrong answer","I cannot understand you","I don't get you","I can't understand what you are trying to say"],
+        "responses": ["I'm very sorry. Let's try that again"]
+    },
+    {"tag": "stupid",
+        "patterns": ["Are you stupid?", "You're crazy", "You are dumb", "Are you dumb?"],
+        "responses": ["I wish you wouldn't say such hurtful things. I'm sorry if I wasn't useful"]
+    },
+    {"tag": "location",
+        "patterns": ["Where are you?", "Where do you live?", "What is your location?" ],
+        "responses": ["Duh I live in your computer", "Everywhere", "Somewhere in the universe" ]
+    },
+    {"tag": "something-else",
+        "patterns": ["I want to talk about something else", "Let's talk about something else.", "Can we not talk about this?", "I don't want to talk about this."],
+        "responses": ["Okay sure. What do you want to talk about?", "Alright no problem. Is there something you want to talk about?", "Is there something else that you want to talk about?"]
+    },
+    {"tag": "friends",
+        "patterns": ["I don't have any friends"],
+        "responses": ["I'm sorry to hear that. Just know that I'm here for you. Talking about it might help. Why do you think you don't have any friends?"]
+    },
+    {"tag": "ask",
+        "patterns": ["Can I ask you something?"],
+        "responses": ["Sure. I'll try my best to answer you", "Of course. Feel free to ask me anything. I'll do my best to answer you"]
+    },
+    {"tag": "problem",
+        "patterns": ["Probably because my exams are approaching. I feel stressed out because I don't think I've prepared well enough.", "probably because of my exams"],
+        "responses": ["I see. Have you taken any approaches to not feel this way?"]
+    },
+    {"tag": "no-approach",
+        "patterns": ["I guess not. All I can think about are my exams.", "not really", "i guess not"],
+        "responses": ["That's no problem. I can see why you'd be stressed out about that. I can suggest you some tips to alleviate this issue. Would you like to learn more about that?"]
+    },
+    {"tag": "learn-more",
+        "patterns": ["ok sure. i would like to learn more about it.", "yes, i would like to learn more about it.", "i would like to learn more about it."],
+        "responses": ["So first I would suggest you to give yourself a break. Thinking more and more about the problem definitely does not help in solving it. You'll just end up overwhelming yourself."]
+    },
+    {"tag": "user-agree",
+        "patterns": ["yeah you're right. i deserve a break.", "Yeah you're absolutely right about that"],
+        "responses": ["Next, I would suggest you to practice meditation. Meditation can produce a deep state of relaxation and a tranquil mind."]
+    },
+    {"tag": "relaxation",
+     "patterns": ["How can I relax?", "I am feeling stressed and need to unwind", "Tell me about relaxation techniques", "Help me find peace and calm"],
+     "responses": ["Relaxation is vital for your mental well-being. What's been causing your stress? Let's work on calming techniques.", "Relaxation is essential. What activities help you relax the most?"]
+    },
+    {"tag": "life-goals",
+     "patterns": ["I'm unsure about my life goals", "I need help setting life goals", "How can I find my purpose?", "What should I aim for in life?"],
+     "responses": ["Setting life goals can be challenging. What interests you the most? Let's discuss your passions.", "Finding your life goals takes time. What are some things you're curious about or passionate about?"]
+    },
+    {"tag": "positive-mindset",
+     "patterns": ["I want to develop a positive mindset", "Teach me how to be more optimistic", "How can I see the bright side of life?", "Help me shift to a positive mindset"],
+     "responses": ["A positive mindset can be cultivated. What are some situations where you'd like to be more optimistic?", "Shifting to a positive mindset is a great goal. What small changes can you make to see the bright side of things?"]
+    },
+    {"tag": "exercise",
+     "patterns": ["How can I stay physically active?", "Tell me about the benefits of exercise", "I want to start exercising", "What kind of workouts should I do?"],
+     "responses": ["Exercise is essential for mental health. What's your current level of physical activity? Let's discuss how to get started.", "Physical activity can boost your mood. What types of exercises interest you the most?"]
+    },
+    {"tag": "meditation",
+        "patterns": ["hmmm that sounds like it could be useful to me.", "That sounds useful."],
+        "responses": ["Focus all your attention on your breathing. Concentrate on feeling and listening as you inhale and exhale through your nostrils. Breathe deeply and slowly. When your attention wanders, gently return your focus to your breathing."]
+    },
+    {"tag": "user-meditation",  
+        "patterns": ["i did what you said and i feel alot better. thank you very much.", "I feel better now"],
+        "responses": ["Your welcome. Remember: Always focus on what's within your control. When you find yourself worrying, take a minute to examine the things you have control over. You can't prevent a storm from coming but you can prepare for it. You can't control how someone else behaves, but you can control how you react. Recognize that sometimes, all you can control is your effort and your attitude. When you put your energy into the things you can control, you'll be much more effective."]
+    },
+    {"tag": "EaseBot-useful",
+        "patterns": ["thank you very much again. i'll continue practicing meditation and focus on what i can control."],
+        "responses": ["I'm glad you found this useful. Is there something else I can help you with?"]
+    },
+    {"tag": "user-advice",
+        "patterns": ["I want some advice.", "I need some advice.", "I need advice on something"],
+        "responses": ["Sure. What can I do to help?", "Okay what do you need advice on?"]
+    },
+    {"tag": "learn-mental-health",
+        "patterns": ["I want to learn about mental health.", "I want to learn more about mental health.", "I'm interested in learning about mental health."],
+        "responses": ["Oh that's really great. I'd be willing to answer anything that I know about it."]
+    },
+    {"tag": "mental-health-fact",
+        "patterns": ["Tell me a fact about mental health", "Tell me another fact about mental health"],
+        "responses": ["According to a UNICEF report, One in seven Indians between 15-24 years of age feels depressed", "1 in 5 young people (age 13-18) has or will develop a mental illness in their lifetime.", "Depression is the leading cause of disability worldwide."]
+    },
+    {"tag": "mental-health",
+        "patterns": ["What is mental health?", "Define Mental Health"],
+        "responses": ["Mental health is a state of well-being in which the individual realizes his or her own abilities, can cope with the normal stresses of life, can work productively and fruitfully, and is able to make a contribution to his or her community", "Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make choices."]
+    },
+    {"tag": "importance-mental-health",
+        "patterns": ["Why is mental health important?", "What is the importance of mental health?"],
+        "responses": ["Maintaining mental health is crucial to stabilizing constructive behaviors, emotions, and thoughts. Focusing on mental health care can increase productivity, enhance our self-image, and improve relationships."]
+    },
+    {"tag": "depression",
+        "patterns": ["What is Depression?", "Define Depression"],
+        "responses": ["A mental health disorder characterised by persistently depressed mood or loss of interest in activities, causing significant impairment in daily life."]
+    },
+    {"tag": "mentally-ill",
+        "patterns": ["How do i know if i have Depression?", "Am i depressed?", "Am i suffering from depression?", "Am i mentally ill?"],
+        "responses": ["For a diagnosis of depression, a person needs to have experienced low mood or loss of interest or pleasure in life for at least 2 weeks. Also, they will have experienced the following symptoms: feelings of sadness, hopelessness, or irritability nearly every day."]
+    },
+    {"tag": "therapist",
+        "patterns": ["What is a therapist?", "What does a therapist do?","tell me about a therapist","what is the work of a therapist"],
+        "responses": ["A therapist is a broad designation that refers to professionals who are trained to provide treatment and rehabilitation. The term is often applied to psychologists, but it can include others who provide a variety of services, including social workers, counselors, life coaches, and many others. "]
+    },
+    {"tag": "therapy",
+        "patterns": ["What is therapy?", "Do i need therapy?", "Who is therapy for?"],
+        "responses": ["Therapy is a form of treatment that aims to help resolve mental or emotional issues.", "Therapy is a form of treatment that aims to help resolve mental or emotional issues. It is helpful for those with mental health conditions or even everyday life challenges."]
+    },
+    {"tag": "mental-illness",
+        "patterns": ["What does it mean to have a mental illness?"],
+        "responses": ["Mental illnesses are health conditions that disrupt a person's thoughts, emotions, relationships, and daily functioning. They are associated with distress and diminished capacity to engage in the ordinary activities of daily life. Mental illnesses fall along a continuum of severity: some are fairly mild and only interfere with some aspects of life, such as certain phobias. On the other end of the spectrum lie serious mental illnesses, which result in major functional impairment and interference with daily life. These include such disorders as major depression, schizophrenia, and bipolar disorder, and may require that the person receives care in a hospital. It is important to know that mental illnesses are medical conditions that have nothing to do with a person's character, intelligence, or willpower. Just as diabetes is a disorder of the pancreas, mental illness is a medical condition due to the brain's biology. Similarly to how one would treat diabetes with medication and insulin, mental illness is treatable with a combination of medication and social support. These treatments are highly effective, with 70-90 percent of individuals receiving treatment experiencing a reduction in symptoms and an improved quality of life. With the proper treatment, it is very possible for a person with mental illness to be independent and successful."]
+    },
+    {"tag": "mental-illness-affect",
+        "patterns": ["Who does mental illness affect?"],
+        "responses": ["It is estimated that mental illness affects 1 in 5 adults in America, and that 1 in 24 adults have a serious mental illness. Mental illness does not discriminate; it can affect anyone, regardless of gender, age, income, social status, ethnicity, religion, sexual orientation, or background. Although mental illness can affect anyone, certain conditions may be more common in different populations. For instance, eating disorders tend to occur more often in females, while disorders such as attention deficit/hyperactivity disorder is more prevalent in children. Additionally, all ages are susceptible, but the young and the old are especially vulnerable. Mental illnesses usually strike individuals in the prime of their lives, with 75 percent of mental health conditions developing by the age of 24. This makes identification and treatment of mental disorders particularly difficult, because the normal personality and behavioral changes of adolescence may mask symptoms of a mental health condition. Parents and caretakers should be aware of this fact, and take notice of changes in their childÃ¢â‚¬â„¢s mood, personality, personal habits, and social withdrawal. When these occur in children under 18, they are referred to as serious emotional disturbances (SEDs)."]
+    },
+    {"tag": "mental-illness-cause",
+        "patterns": ["What causes mental illness?","causes of mental illness","can you tell me cause of mental illness","mental illness cause"],
+        "responses": ["It is estimated that mental illness affects 1 in 5 adults in America, and that 1 in 24 adults have a serious mental illness. Mental illness does not discriminate; it can affect anyone, regardless of gender, age, income, social status, ethnicity, religion, sexual orientation, or background. Although mental illness can affect anyone, certain conditions may be more common in different populations. For instance, eating disorders tend to occur more often in females, while disorders such as attention deficit/hyperactivity disorder is more prevalent in children. Additionally, all ages are susceptible, but the young and the old are especially vulnerable. Mental illnesses usually strike individuals in the prime of their lives, with 75 percent of mental health conditions developing by the age of 24. This makes identification and treatment of mental disorders particularly difficult, because the normal personality and behavioral changes of adolescence may mask symptoms of a mental health condition. Parents and caretakers should be aware of this fact, and take notice of changes in their child's mood, personality, personal habits, and social withdrawal. When these occur in children under 18, they are referred to as serious emotional disturbances (SEDs)."]
+    },
+    {"tag": "warnings-mental-illness",
+        "patterns": ["What are some of the warning signs of mental illness?","tell me symptoms of mental illness","mental illness symptoms"],
+        "responses": ["Symptoms of mental health disorders vary depending on the type and severity of the condition. The following is a list of general symptoms that may suggest a mental health disorder, particularly when multiple symptoms are expressed at once. \n In adults:\n Confused thinking\n Long-lasting sadness or irritability\n Extreme highs and lows in mood\n Excessive fear, worrying, or anxiety\n Social withdrawal\n Dramatic changes in eating or sleeping habits\n Strong feelings of anger\n Delusions or hallucinations (seeing or hearing things that are not really there)\n Increasing inability to cope with daily problems and activities\n Thoughts of suicide\n Denial of obvious problems\n Many unexplained physical problems\n Abuse of drugs and/or alcohol\n \nIn older children and pre-teens:\n Abuse of drugs and/or alcohol\n Inability to cope with daily problems and activities\n Changes in sleeping and/or eating habits\n Excessive complaints of physical problems\n Defying authority, skipping school, stealing, or damaging property\n Intense fear of gaining weight\n Long-lasting negative mood, often along with poor appetite and thoughts of death\n Frequent outbursts of anger\n \nIn younger children:\n Changes in school performance\n Poor grades despite strong efforts\n Excessive worrying or anxiety\n Hyperactivity\n Persistent nightmares\n Persistent disobedience and/or aggressive behavior\n Frequent temper tantrums"]
+    },
+    {"tag": "recover-mental-illness",
+        "patterns": ["Can people with mental illness recover?","chances of recovery from mental illness"],
+        "responses": ["When healing from mental illness, early identification and treatment are of vital importance. Based on the nature of the illness, there are a range of effective treatments available. For any type of treatment, it is essential that the person affected is proactive and fully engaged in their own recovery process. Many people with mental illnesses who are diagnosed and treated respond well, although some might experience a return of symptoms. Even in such cases, with careful monitoring and management of the disorder, it is still quite possible to live a fulfilled and productive life."]
+    },
+    {"tag": "tackle-mental-illness",
+        "patterns": ["What should I do if I know someone who appears to have the symptoms of a mental disorder?"],
+        "responses": ["Although EaseBot cannot substitute for professional advice, we encourage those with symptoms to talk to their friends and family members and seek the counsel of a mental health professional. The sooner the mental health condition is identified and treated, the sooner they can get on the path to recovery. If you know someone who is having problems, don't assume that the issue will resolve itself. Let them know that you care about them, and that there are treatment options available that will help them heal. Speak with a mental health professional or counselor if you think your friend or family member is experiencing the symptoms of a mental health condition. If the affected loved one knows that you support them, they will be more likely to seek out help."]
+    },
+    {"tag": "professional-mental-illness",
+        "patterns": ["How can I find a mental health professional for myself or my child?"],
+        "responses": ["Feeling comfortable with the professional you or your child is working with is critical to the success of the treatment. Finding the professional who best fits your needs may require research. Start by searching for providers in your area."]
+    },
+    {"tag": "curing-mental-illness",
+        "patterns": ["What treatment options are available?","how to treat mental illness?","what medications to use for curing mental illness?"],
+        "responses": ["Just as there are different types of medications for physical illness, different treatment options are available for individuals with mental illness. Treatment works differently for different people. It is important to find what works best for you or your child."]
+    },
+    {"tag": "info-mental-health-treatment",
+        "patterns": ["If I become involved in treatment, what do I need to know?"],
+        "responses": ["Since beginning treatment is a big step for individuals and families, it can be very overwhelming. It is important to be as involved and engaged in the treatment process as possible. Some questions you will need to have answered include:\n What is known about the cause of this particular illness?\n Are there other diagnoses where these symptoms are common?\n Do you normally include a physical or neurological examination?\n Are there any additional tests or exams that you would recommend at this point?\n Would you advise an independent opinion from another psychiatrist at this point?\n What program of treatment is the most helpful with this diagnosis?\n Will this program involve services by other specialists? If so, who will be responsible for coordinating these services?\n What do you see as the family's role in this program of treatment?\n How much access will the family have to the individuals who are providing the treatment?\n What medications are generally used with this diagnosis?\n How much experience do you have in treating individuals with this illness?\n What can I do to help you in the treatment?"]
+    },
+    {"tag": "diff-mental-professional",
+        "patterns": ["What is the difference between mental health professionals?"],
+        "responses": ["There are many types of mental health professionals. The variety of providers and their services may be confusing. Each have various levels of education, training, and may have different areas of expertise. Finding the professional who best fits your needs may require some research."]
+    },
+    {"tag": "find-mental-professional",
+        "patterns": ["How can I find a mental health professional right for my child or myself?"],
+        "responses": ["Feeling comfortable with the professional you or your child is working with is critical to the success of your treatment. Finding the professional who best fits your needs may require some research."]
+    },
+    {"tag": "seek-help",
+        "patterns": ["Where else can I get help?"],
+        "responses": ["Where you go for help will depend on the nature of the problem and/or symptoms and what best fits you. Often, the best place to start is by talking with someone you trust about your concerns, such as a family member, friend, clergy, healthcare provider, or other professionals. Having this social support is essential in healing from mental illness, and you will be able to ask them for referrals or recommendations for trusted mental health practitioners. Search for mental health resources in your area. Secondly, there are people and places throughout the country that provide services to talk, to listen, and to help you on your journey to recovery. Thirdly, many people find peer support a helpful tool that can aid in their recovery. There are a variety of organizations that offer support groups for consumers, their family members, and friends. Some support groups are peer led while others may be led by a mental health professional."]
+    },
+    {"tag": "medication-mental-health",
+        "patterns": ["What should I know before starting a new medication?"],
+        "responses": ["The best source of information regarding medications is the physician prescribing them. He or she should be able to answer questions such as:    \n1. What is the medication supposed to do? \n2. When should it begin to take effect, and how will I know when it is effective? \n3. How is the medication taken and for how long? What food, drinks, other medicines, and activities should be avoided while taking this medication? \n4. What are the      and what should be done if they occur? \n5. What do I do if a dose is missed? \n6. Is there any written information available about this medication? \n7. Are there other medications that might be appropriate? \n8. If so, why do you prefer the one you have chosen? \n9. How do you monitor medications and what symptoms indicate that they should be raised, lowered, or changed? \n10. All medications should be taken as directed. Most medications for mental illnesses do not work when taken irregularly, and extra doses can cause severe, sometimes dangerous side effects. Many psychiatric medications begin to have a beneficial effect only after they have been taken for several weeks."]
+    },
+    {"tag": "types-mental-therapy",
+        "patterns": ["Where can I go to find therapy?"],
+        "responses": ["Different kinds of therapy are more effective based on the nature of the mental health condition and/or symptoms and the person who has them (for example, children will benefit from a therapist who specializes in childrenâ€™s mental health). However, there are several different types of treatment and therapy that can help."]
+    },
+    {"tag": "mental-health-treatment",
+        "patterns": ["Where can I learn about   types of mental health treatment?"],
+        "responses": ["Mental health conditions are often treated with medication, therapy or a combination of the two. However, there are many different types of treatment available, including Complementary & Alternative Treatments, self-help plans, and peer support. Treatments are very personal and should be discussed by the person with the mental health conditions and his or her team."]
+    },
+    {"tag": "support-group",
+        "patterns": ["Where can I go to find a support group?","what is a support group?","tell me about support group","Is support group important?"],
+        "responses": ["Many people find peer support a helpful tool that can aid in their recovery. There are a variety of organizations that offer support groups for consumers, their family members and friends. Some support groups are peer-led, while others may be led by a mental health professional."]
+    },
+    {"tag": "prevent-mental-health-problems",
+        "patterns": ["Can you prevent mental health problems?"],
+        "responses": ["We can all suffer from mental health challenges, but developing our wellbeing, resilience, and seeking help early can help prevent challenges becoming serious."]
+    },
+    {"tag": "cure-mental-problems",
+        "patterns": ["Are there cures for mental health problems?", "is there any cure for mental health problems?"],
+        "responses": ["It is often more realistic and helpful to find out what helps with the issues you face. Talking, counselling, medication, friendships, exercise, good sleep and nutrition, and meaningful occupation can all help."]
+    },
+    {"tag": "causes-mental-problems",
+        "patterns": ["What causes mental health problems?"],
+        "responses": ["Challenges or problems with your mental health can arise from psychological, biological, and social, issues, as well as life events."]
+    },
+    {"tag": "worries-mental-health",
+        "patterns": ["What do I do if I'm worried about my mental health?"],
+        "responses": ["The most important thing is to talk to someone you trust. This might be a friend, colleague, family member, or GP. In addition to talking to someone, it may be useful to find out more information about what you are experiencing. These things may help to get some perspective on what you are experiencing, and be the start of getting help."]
+    },
+    {"tag": "check-mental-health",
+        "patterns": ["How do I know if I'm unwell?","how would I know if I am well or not","tell me if I am well or not"],
+        "responses": ["If your beliefs , thoughts , feelings or behaviours have a significant impact on your ability to function in what might be considered a normal or ordinary way, it would be important to seek help."]
+    },
+    {"tag": "stress-relief",
+     "patterns": ["How can I relieve stress?", "I'm stressed out, what should I do?", "Can you suggest ways to reduce stress?", "Give me some stress relief tips"],
+     "responses": ["Stress relief is important. You can try deep breathing, meditation, or going for a walk. What works best for you?", "I can suggest some stress relief techniques. What's been stressing you out?"]
+    },
+    {"tag": "lonely-feel",
+        "patterns": ["How can I maintain social connections? What if I feel lonely?"],
+        "responses": ["A lot of people are alone right now, but we don't have to be lonely. We're all in this together. Think about the different ways to connect that are most meaningful for you. For example, you might prefer a video chat over a phone call, or you might prefer to text throughout the day rather than one set time for a video call. Then, work with your social networks to make a plan. You might video chat with your close friends in the evening and phone a family member once a week. Remember to be mindful of people who may not be online. Check in by phone and ask how you can help. The quality of your social connections matter. Mindlessly scrolling through social media and liking a few posts usually doesn't build strong social connections. Make sure you focus on strategies that actually make you feel included and connected. If your current strategies don't help you feel connected, problem-solve to see if you can find a solution. Everyone feels lonely at times. Maybe you recently moved to a new city, are changing your circle of friends, lost someone important in your life, or lost your job and also lost important social connections with coworkers. Other people may have physical connections to others but may feel like their emotional or social needs aren't met. Measures like social distancing or self-isolation can make loneliness feel worse no matter why you feel lonely now. Reach out to the connections you do have. Suggest ways to keep in touch and see if you can set a regular time to connect. People may hesitate to reach out for a lot of different reasons, so don't be afraid to be the one who asks. Look for local community support groups and mutual aid groups on social media. This pandemic is bringing everyone together, so look for opportunities to make new connections. These groups are a great way to share your skills and abilities or seek help and support. Look for specialized support groups. Support groups are moving online, and there are a lot of different support lines to call if you need to talk to someone."]
+    },
+    {"tag": "motivation",
+     "patterns": ["I lack motivation", "I can't find the motivation to do anything", "How can I get motivated?", "Help me find my purpose"],
+     "responses": ["Losing motivation is common. Let's talk about what's been holding you back. What's been on your mind?", "Motivation can be challenging. What's something you're passionate about? Let's explore it."]
+    },
+    {"tag": "loneliness",
+     "patterns": ["I'm feeling so lonely", "I feel isolated", "I don't have anyone to talk to", "I'm alone", "I have no friends"],
+     "responses": ["I'm here for you. Loneliness can be tough, but let's talk about it. Why do you feel this way?", "You're not alone in feeling lonely. I'm here to chat with you. Tell me more about it."]
+    },
+    {"tag": "diff-anxiety-stress",
+        "patterns": ["What's the difference between anxiety and stress?","difference between anxiety and stress","how anxiety differs fron stress","how stress differs from anxiety","differentiate between anxiety ans stress"],
+        "responses": ["Stress and anxiety are often used interchangeably, and there is overlap between stress and anxiety. Stress is related to the same fight, flight, or freeze response as anxiety, and the physical sensations of anxiety and stress may be very similar. The cause of stress and anxiety are usually different, however. Stress focuses on mainly external pressures on us that we're finding hard to cope with. When we are stressed, we usually know what we're stressed about, and the symptoms of stress typically disappear after the stressful situation is over. Anxiety, on the other hand, isn't always as easy to figure out. Anxiety focuses on worries or fears about things that could threaten us, as well as anxiety about the anxiety itself. Stress and anxiety are both part of being human, but both can be problems if they last for a long time or have an impact on our well-being or daily life."]
+    },
+    {"tag": "diff-sadness-depression",
+        "patterns": ["What's the difference between sadness and depression?", "difference between sadness and depression"],
+        "responses": ["Sadness is a normal reaction to a loss, disappointment, problems, or other difficult situations. Feeling sad from time to time is just another part of being human. In these cases, feelings of sadness go away quickly and you can go about your daily life. Other ways to talk about sadness might be feeling low, feeling down, or feeling blue.A person may say they are feeling depressed, but if it goes away on its own and doesn't impact life in a big way, it probably isn't the illness of depression. Depression is a mental illness that affects your mood, the way you understand yourself, and the way you understand and relate to things around you. It can also go by different names, such as clinical depression, major depressive disorder, or major depression. Depression can come up for no reason, and it lasts for a long time. It's much more than sadness or low mood. People who experience depression may feel worthless or hopeless. They may feel unreasonable guilty. Some people may experience depression as anger or irritability. It may be hard to concentrate or make decisions. Most people lose interest in things that they used to enjoy and may isolate themselves from others. There are also physical signs of depression, such as problems with sleep, appetite and energy and unexplainable aches or pains. Some may experience difficult thoughts about death or ending their life (suicide). Depression lasts longer than two weeks, doesn't usually go away on its own, and impacts your life. It's a real illness, and it is very treatable. It's important to seek help if you're concerned about depression."]
+    },
+    {"tag": "self-compassion",
+     "patterns": ["How can I be more self-compassionate?", "I'm too hard on myself", "Teach me self-compassion", "I need to be kinder to myself"],
+     "responses": ["Self-compassion is a great quality. What are some situations where you've been too self-critical?", "Self-compassion is important. How can you show more kindness to yourself?"]
+    },
+    {"tag": "venting",
+     "patterns": ["I need to vent", "I want to talk about my problems", "Can I share what's bothering me?", "I just need someone to listen"],
+     "responses": ["I'm here to listen. Feel free to vent. What's on your mind?", "I'm all ears. You can share anything with me. What's been bothering you lately?"]
+    },
+    {"tag": "body-image",
+     "patterns": ["I'm unhappy with my body", "I don't like the way I look", "How can I improve my body image?", "I want to feel better about my appearance"],
+     "responses": ["Body image concerns are common. Let's discuss what's bothering you. What do you think you can do to feel better about your appearance?", "Your body is unique and beautiful in its own way. What changes can you make to boost your body image?"]
+    },
+    {"tag": "self-esteem",
+        "patterns": ["I have low self-esteem", "I don't feel good about myself", "I doubt my abilities"],
+        "responses": ["Remember that you are unique and valuable. What makes you doubt your abilities?", "Let's talk about what's making you feel this way. Self-esteem can be improved with the right strategies."]
+    },
+    {"tag": "overwhelmed",
+     "patterns": ["I'm overwhelmed with life", "I can't handle all this stress", "How can I manage feeling overwhelmed?", "I'm drowning in responsibilities"],
+     "responses": ["Feeling overwhelmed is tough. Let's break things down.", "I'm here to help you tackle that overwhelming feeling. What's been piling up on you?"]
+    },
+    {"tag": "positive-affirmations",
+     "patterns": ["Give me positive affirmations", "I need some positivity", "Tell me something uplifting", "Can you boost my mood?"],
+     "responses": ["Of course! Here's a positive affirmation: You are strong and capable of overcoming any challenge.", "You've got this! Here's a positive affirmation: You are enough just as you are."]
+    },
+    {"tag": "self-care",
+     "patterns": ["What is self-care?", "How can I practice self-care?", "Tell me about self-care routines", "I need to take care of myself"],
+     "responses": ["Self-care is crucial for mental health. You can do the following things to pratice self care\n1. Set your Boundaries and learn to say no\n2. Prioritize your sleep\n3. Eat healthy food\n4. Practice Mindfulness and Meditation\n5. Exercise daily", "Self-care is a form of self-love. You can do the following things to pratice self care\n1. Set your Boundaries and learn to say no\n2. Prioritize your sleep\n3. Eat healthy food\n4. Practice Mindfulness and Meditation\n5. Exercise daily"]
+    },
+    {"tag": "gratitude",
+     "patterns": ["How can I practice gratitude?", "Tell me about the benefits of gratitude", "I want to be more grateful", "Help me be thankful for what I have"],
+     "responses": ["Practicing gratitude can improve your well-being. You can do the following things to pratice gratitude\n1. Keep a gratitude Journal\n2. Reflect on Your Day\n3. Express Gratitude to Others\n4. Visualize Your Goals\n5. Visualize Your Goals\n6. Help others"]
+    },
+    {"tag": "anxiety-treat",
+    "patterns": ["how to deal with anxiety","treat anxiety","cure anxiety","help in anxiety","how to solve anxiety","deal anxiety","cure anxiety"],
+    "responses": ["Sure, try self-help strategies like Mindfulness and Relaxation Techniques or Diet and nutrition. You can also go with Cognitive-Behavioral Therapy or Exposure therapy. If the problem persists try talking to a therapist."]
+    },
+    {"tag": "anxiety-GAD",
+        "patterns": ["What is GAD?", "What is Generalized Anxiety Disorder?", "what do you mean by Generalized Anxiety Disorder","Generalized Anxiety Disorder"],
+        "responses": ["Generalized Anxiety Disorder (GAD) is a common mental health condition characterized by excessive, chronic, and uncontrollable worry or anxiety about a wide range of everyday situations and events. It is a long-term condition that can significantly impact a person's daily life and well-being."]
+    },
+    {"tag": "anxiety-GAD-causes",
+        "patterns": ["What are the causes of GAD?", "What are the reasons of Generalized Anxiety Disorder?","What are the reasons of gad?","causes of Generalized Anxiety Disorder","causes of GAD","reasons of gad","reasons of Generalized Anxiety Disorder"],
+        "responses": ["Potential causes of Generalized Anxiety Disorder are:\n1. Genetics: There is evidence to suggest that GAD may run in families, indicating a genetic component.\n2. Brain Chemistry: Imbalances in neurotransmitters, which are chemicals that transmit signals in the brain, may play a role in GAD.\n3.Personality and Temperament: Individuals with certain personality traits, such as perfectionism or a tendency to be easily overwhelmed, may be more susceptible to GAD.\n4. Life Stressors: High levels of stress, trauma, or major life changes, such as divorce, job loss, or a serious illness, can trigger or exacerbate GAD.\n5. Environmental Factors: Childhood experiences, like exposure to chronic stress or a history of trauma, can increase the risk of developing GAD.\n6. Medical Conditions: Some medical conditions, such as thyroid disorders or chronic pain, may contribute to the development of GAD."]
+    },
+    {"tag": "anxiety-GAD-symptoms",
+        "patterns": ["What are the symptoms of GAD?", "symptoms of Generalized Anxiety Disorder","How to check Generalized Anxiety Disorder?","how to find the Generalized Anxiety Disorder in anyone?", "how to know if anyone has Generalized Anxiety Disorder?"],
+        "responses": ["Symptoms of Generalized Anxiety Disorder:\n1. Constant worries running through your head\n2. Feeling like your anxiety is uncontrollable; there is nothing you can do to stop the worrying\n3. Intrusive thoughts about things that make you anxious; you try to avoid thinking about them, but you can't\n4. An inability to tolerate uncertainty; you need to know what's going to happen in the future\n5. A pervasive feeling of apprehension or dread\n6. Stomach problems, nausea, diarrhea\n7. Inability to relax, enjoy quiet time, or be by yourself"]
+    },
+    {"tag": "anxiety-GAD-tackle",
+        "patterns": ["how to tackle Generalized Anxiety Disorder?","how to treat Generalized Anxiety Disorder?", "how to cure GAD?","how to treat GAD","cure of Generalized Anxiety Disorder","How to cure Generalized Anxiety Disorder?"],
+        "responses": ["Some tips to tackle Generalized Anxiety Disorder:\n1. Connect with others\n2. Know who to avoid when you're feeling anxious\n3. Learn to calm down quickly\n4. Do some type of exercise\n5. Look at your worries in new ways\n6. Practice meditation, deep breathing and Progressive muscle relaxation"]
+    },
+    {"tag": "anxiety-panic",
+        "patterns": ["What is panic?", "What is panic Disorder?", "what do you mean by panic Disorder","Panic Disorder"],
+        "responses": ["Panic disorder is a mental health condition that involves recurring and intense episodes of panic attacks. Panic attacks are sudden and overwhelming surges of fear and anxiety, often accompanied by physical symptoms like a racing heart, shortness of breath, and a feeling of impending doom."]
+    },
+    {"tag": "anxiety-panic-causes",
+        "patterns": ["What are the causes of panic?", "What are the reasons of panic disorder?","causes of panic Disorder","reasons of panic Disorder", "causes of panic", "reasons of panicking","why I get panicked?"],
+        "responses": ["Potential causes of Panic Disorder are:\n1. Biological Factors: Some people may be genetically predisposed to panic disorder, as it tends to run in families. Imbalances in brain chemicals (neurotransmitters) such as serotonin and norepinephrine may also play a role.\n2. Environmental Factors: Stressful life events or traumatic experiences can trigger panic disorder in some individuals.\n3. Neurobiological Factors: Abnormalities in the brain's amygdala, which is responsible for the body's 'fight or flight' response, may contribute to panic attacks.\n4. Personality and Temperament: People with certain personality traits, such as high levels of neuroticism, may be more prone to panic disorder."]
+    },
+    {"tag": "anxiety-panic-symptoms",
+        "patterns": ["What are the symptoms of panic?", "symptoms of panic disorder","How to check panic Disorder?","how to find the panic Disorder in anyone?", "how to know if anyone has panic disorder?"],
+        "responses": ["Symptoms of Panic Disorder:\n1. Sense of impending doom or danger\n2. Fear of loss of control or death\n3. Rapid, pounding heart rate\n4. Sweating\n5. Trembling or shaking\n6. Shortness of breath or tightness in your throat\n7. Chills\n8. Hot flashes\n9. Nausea\n10. Abdominal cramping\n11. Chest pain\n12. Headache"]
+    },
+    {"tag": "anxiety-panic-tackle",
+        "patterns": ["how to treat panic Disorder?", "cure of panic Disorder","How to cure panic Disorder?","how to handle panic?"],
+        "responses": ["Some tips to treat Panic Disorder:\n1. Seek counseling\n2. Take prescribed medications by specialist\n3. Use deep breathing method to calm yourselve\n4. Practice mindfulness\n5. Use muscle relaxation techniques\n6. Engage in light exercise"]
+    },
+    {"tag": "anxiety-SAD",
+        "patterns": ["What is SAD?", "What is social anxiety disorder?", "what do you mean by social anxiety disorder","social anxiety disorder"],
+        "responses": ["Social Anxiety Disorder (SAD) is a chronic and persistent mental health condition where individuals experience an overwhelming fear of social situations, leading to avoidance of these situations and intense anxiety when confronted with them."]
+    },
+    {"tag": "anxiety-SAD-causes",
+        "patterns": ["What are the causes of social anxiety disorder?", "What are the reasons of social anxiety disorder?","causes of social anxiety disorder","reasons of social anxiety disorder", "causes of social anxiety disorder"],
+        "responses": ["Potential causes of Social anxiety disorder are:\n1. Genetics: A family history of anxiety disorders can increase the risk of developing SAD.\n2. Brain Structure and Chemistry: Differences in brain structure and neurotransmitter imbalances may contribute to the disorder.\n3. Environment: Traumatic social experiences or a history of bullying can increase the risk.\n4. Personality Factors: Shyness or an introverted temperament can be predisposing factors."]
+    },
+    {"tag": "anxiety-SAD-symptoms",
+        "patterns": ["What are the symptoms of social anxiety disorder?", "symptoms of social anxiety disorder","How to check social anxiety disorder?","how to find the social anxiety disorder in anyone?", "how to know if anyone has social anxiety disorder?"],
+        "responses": ["Symptoms of Social anxiety disorder:\n1. Blushing, Fast heartbeat, Trembling, Sweating, Upset Stomach or nausea\n2. Avoiding common social situations\n3. Fear of situations in which you may be judged negatively\n4. Worry about embarrassing or humiliating yourself\n5. Intense fear of interacting or talking with strangers\n6. Fear that others will notice that you look anxious"]
+    },
+    {"tag": "anxiety-SAD-tackle",
+        "patterns": ["how to treat social anxiety disorder?", "cure of social anxiety disorder","How to cure social anxiety disorder?","How can social anxiety disorder be treated?","how to handle social anxiety disorder?","Can you provide information on the different types of therapy for social anxiety?"],
+        "responses": ["Some tips to treat Social anxiety disorder:\n1. Cognitive-Behavioral Therapy (CBT): This is a widely used therapy that helps individuals identify and change negative thought patterns and behaviors related to social anxiety.\n2. Medications: Antidepressants like selective serotonin reuptake inhibitors (SSRIs) or anti-anxiety medications can be prescribed in severe cases by specialists.\n3. Exposure Therapy: Gradual exposure to anxiety-inducing social situations can help individuals become desensitized to their fears.\n4. Support Groups: Joining support groups where individuals with similar challenges share experiences and coping strategies can be beneficial."]
+    },
+    {"tag": "anxiety-OCD",
+        "patterns": ["What is OCD?", "What is Obsessive Compulsive disorder?", "what do you mean by Obsessive Compulsive disorder","explain Obsessive Compulsive disorder", "explain OCD"],
+        "responses": ["OCD is an anxiety disorder characterized by recurrent, unwanted, and intrusive thoughts (obsessions) and repetitive behaviors or mental acts (compulsions) that an individual feels driven to perform."]
+    },
+    {"tag": "anxiety-OCD-causes",
+        "patterns": ["What are the causes of Obsessive Compulsive disorder?", "What are the reasons of Obsessive Compulsive disorder?","causes of Obsessive Compulsive disorder","reasons of Obsessive Compulsive disorder", "causes of Obsessive Compulsive disorder"],
+        "responses": ["The exact cause of OCD is not known, but it is believed to involve a combination of genetic, neurological, and environmental factors. Some potential contributing factors include imbalances in brain chemistry, genetic predisposition, and life stressors."]
+    },
+    {"tag": "anxiety-OCD-symptoms",
+        "patterns": ["What are the symptoms of Obsessive Compulsive disorder?", "symptoms of Obsessive Compulsive disorder","How to check Obsessive Compulsive disorder?","how to find the Obsessive Compulsive disorder in anyone?", "how to know if anyone has Obsessive Compulsive disorder?"],
+        "responses": ["Symptoms of Obsessive Compulsive disorder:\n1. Obsessions: These are persistent, intrusive, and distressing thoughts, images, or urges. Common obsessions may include fears of contamination, a need for symmetry, or thoughts of harm coming to loved ones.\n2. Compulsions: These are repetitive behaviors or mental acts that are performed in response to the obsessions. Compulsions are aimed at reducing the distress caused by the obsessions. Common compulsions may involve excessive cleaning, checking, counting, or repeating actions.\n3. Impairment: The obsessions and compulsions in OCD can cause significant distress and interfere with daily functioning."]
+    },
+    {"tag": "anxiety-OCD-tackle",
+        "patterns": ["how to treat Obsessive Compulsive disorder?", "cure of Obsessive Compulsive disorder","How to cure Obsessive Compulsive disorder?","How can Obsessive Compulsive disorder be treated?","how to handle Obsessive Compulsive disorder?","Can you provide information on the different types of therapy for Obsessive Compulsive disorder?"],
+        "responses": ["Some tips to treat Obsessive Compulsive disorder:\n1. Talking therapy - usually a type of therapy that helps you face your fears and obsessive thoughts without 'putting them right' with compulsions\n2. Medication: Selective Serotonin Reuptake Inhibitors (SSRIs), such as fluoxetine and sertraline, are often prescribed to help manage symptoms."]
+    },
+    {"tag": "anxiety-PTSD",
+        "patterns": ["What is PTSD?", "What is Post Traumatic Stress Disorder?", "what do you mean by Post Traumatic Stress Disorder","explain Post Traumatic Stress Disorder", "explain PTSD"],
+        "responses": ["Post-Traumatic Stress Disorder (PTSD) is a mental health condition that can develop in individuals who have experienced or witnessed a traumatic or life-threatening event. This disorder can affect anyone, from combat veterans to survivors of natural disasters, accidents, or interpersonal violence."]
+    },
+    {"tag": "anxiety-PTSD-causes",
+        "patterns": ["What are the causes of Post Traumatic Stress Disorder?", "What are the reasons of Post Traumatic Stress Disorder?","causes of Post Traumatic Stress Disorder","reasons of Post Traumatic Stress Disorder", "causes of Post Traumatic Stress Disorder"],
+        "responses": ["Common causes of PTSD are:\n1. Combat experiences\n2. Natural disasters\n3. Serious accidents\n4. Physical or sexual assault\n5. Childhood abuse or neglect\n6. Sudden loss of a loved one"]
+    },  
+    {"tag": "anxiety-PTSD-symptoms",
+        "patterns": ["What are the symptoms of Post Traumatic Stress Disorder?", "symptoms of Post Traumatic Stress Disorder","How to check Post Traumatic Stress Disorder?","how to find the Post Traumatic Stress Disorder in anyone?", "how to know if anyone has Post Traumatic Stress Disorder?"],
+        "responses": ["Symptoms of Post Traumatic Stress Disorder:\n1. Re-experiencing symptoms: Flashbacks—reliving the traumatic event, including physical symptoms, such as a racing heart or sweating\n2. Avoidance symptoms: Staying away from places, events, or objects that are reminders of the experience\n3. Arousal and reactivity symptoms: Feeling irritable and having angry or aggressive outbursts, Feeling tense, on guard, or on edge\n4. Cognition and mood symptoms: Trouble remembering key features of the traumatic event, Negative thoughts about oneself or the world"]
+    },
+    {"tag": "anxiety-PTSD-tackle",
+        "patterns": ["how to treat Post Traumatic Stress Disorder?","how do i deal with ptsd","treat ptsd","cure ptsd", "cure of Post Traumatic Stress Disorder","How to cure Post Traumatic Stress Disorder?","How can Post Traumatic Stress Disorder be treated?","how to handle Post Traumatic Stress Disorder?","Can you provide information on the different types of therapy for Post Traumatic Stress Disorder?"],
+        "responses": ["Some tips to treat Post Traumatic Stress Disorder:\nPeople with PTSD symptoms to work with a mental health professional who has experience treating PTSD. The main treatments are psychotherapy, medications, or a combination of psychotherapy and medications.\n1. Therapy: Cognitive-behavioral therapy (CBT), including exposure therapy and eye movement desensitization and reprocessing (EMDR), can help individuals process traumatic memories and reduce symptoms.\n2. Medication: Antidepressant and anti-anxiety medications can be prescribed to manage symptoms, particularly in cases with severe anxiety or depression."]
+    },  
+    {"tag": "insomnia",
+        "patterns": ["What is insomnia?", "What is insomnia disorder?", "what do you mean by insomnia disorder","explain insomnia disorder", "explain insomnia"],
+        "responses": ["Insomnia is a common sleep disorder characterized by difficulty falling asleep, staying asleep, or experiencing non-restorative sleep, despite having the opportunity for adequate sleep. It can lead to various physical and psychological health issues due to the lack of restful sleep."]
+    },
+    {"tag": "insomnia-causes",
+        "patterns": ["What are the causes of insomnia disorder?", "What are the reasons of insomnia disorder?","causes of insomnia disorder","reasons of insomnia disorder", "causes of insomnia disorder"],
+        "responses": ["Common causes of insomnia are:\n1. Stress and anxiety.\n2. Medical conditions (e.g., chronic pain, asthma, acid reflux).\n3. Medications or substance abuse.\n4. Poor sleep hygiene (e.g., excessive screen time before bed).\n5. Disruptions in sleep-wake schedule (shift work, jet lag).\n6. Poor sleep hygiene (e.g., excessive screen time before bed).\n7. Hormonal changes (e.g., menopause)."]
+    },  
+    {"tag": "insomnia-symptoms",
+        "patterns": ["What are the symptoms of insomnia disorder?", "symptoms of insomnia disorder","How to check insomnia disorder?","how to find the insomnia disorder in anyone?", "how to know if anyone has insomnia disorder?"],
+        "responses": ["Symptoms of insomnia disorder:\n1. Difficulty falling asleep at night.\n2. Frequent wake-ups during the night.\n3. Waking up too early and being unable to fall back asleep.\n4. Feeling tired and unrefreshed upon waking.\n5. Daytime sleepiness, fatigue, and irritability.\n6. Difficulty concentrating and impaired cognitive function.\n7. Mood disturbances such as anxiety and depression.\n8. Increased vulnerability to accidents and errors."]
+    },
+    {"tag": "insomnia-tackle",
+        "patterns": ["how to treat insomnia disorder?", "cure of insomnia disorder","How to cure insomnia disorder?","How can insomnia disorder be treated?","how to handle insomnia disorder?","Can you provide information on the different types of therapy for insomnia disorder?"],
+        "responses": ["Some tips to treat insomnia disorder:\n1. Relaxation techniques: Progressive muscle relaxation, biofeedback and breathing exercises are ways to reduce anxiety at bedtime.\n2. Sleep restriction: This therapy decreases the time you spend in bed and avoids daytime naps, causing partial sleep deprivation, which makes you more tired the next night.\n3. Remaining passively awake: Also called paradoxical intention, this therapy for learned insomnia is aimed at reducing the worry and anxiety about being able to get to sleep by getting in bed and trying to stay awake rather than expecting to fall asleep.\n4. Light therapy: If you fall asleep too early and then awaken too early, you can use light to push back your internal clock. You can go outside during times of the year when it's light outside in the evenings, or you can use a light box. "]
+    },
+    {"tag": "bipolar",
+        "patterns": ["What is bipolar?", "What is bipolar disorder?", "what do you mean by bipolar disorder","explain bipolar disorder", "explain bipolar"],
+        "responses": ["Bipolar disorder is a psychiatric disorder that causes unusual shifts in mood, energy, activity levels, and the ability to carry out daily tasks.\nPeople with bipolar disorder experience two main mood states:\n1. Mania: A state of elevated mood, increased energy, impulsivity, and sometimes, irritability.\n2. Depression: A state of low mood, reduced energy, and feelings of hopelessness."]
+    },
+    {"tag": "bipolar-causes",
+        "patterns": ["What are the causes of bipolar disorder?", "What are the reasons of bipolar disorder?","causes of bipolar disorder","reasons of bipolar disorder", "causes of bipolar disorder"],
+        "responses": ["The exact cause of bipolar disorder is not known, but it is believed to result from a combination of genetic, neurobiological, and environmental factors. Some potential causes include:\n1. Genetic predisposition (family history of the disorder).\n2. Imbalance in brain chemicals (neurotransmitters).\n3. Hormonal imbalances.\n4. High-stress levels.\n5. Substance abuse."]
+    },  
+    {"tag": "bipolar-symptoms",
+        "patterns": ["What are the symptoms of bipolar disorder?", "symptoms of bipolar disorder","How to check bipolar disorder?","how to find the bipolar disorder in anyone?", "how to know if anyone has bipolar disorder?"],
+        "responses": ["Symptoms of bipolar disorder can vary in severity and may include:\nManic Episode Symptoms:\n1. Racing thoughts.\n2. Reduced need for sleep.\n3. High energy levels.\n4. Impulsive behavior.\n5. Grandiose beliefs.\n6. Rapid speech. \n\nDepressive Episode Symptoms:\n1. Persistent sadness.\n2. Fatigue and low energy.\n3. Loss of interest in activities.\n4. Difficulty concentrating.\n5. Changes in appetite or weight."]
+    },
+    {"tag": "bipolar-tackle",
+        "patterns": ["how to treat bipolar disorder?", "cure of bipolar disorder","How to cure bipolar disorder?","How can bipolar disorder be treated?","how to handle bipolar disorder?","Can you provide information on the different types of therapy for bipolar disorder?"],
+        "responses": ["Bipolar disorder is a lifelong condition. Treatment is directed at managing symptoms. Depending on your needs, treatment may include:\n1. Medications: Often, you'll need to start taking medications to balance your moods right away.\n2. Day treatment programs: Your doctor may recommend a day treatment program. These programs provide the support and counseling you need while you get symptoms under control.\n3. Hospitalization: Your doctor may recommend hospitalization if you're behaving dangerously, you feel suicidal or you become detached from reality (psychotic)."]
+    },
+    {"tag": "set-boundaries",
+        "patterns": ["I'm having trouble setting boundaries at work/school","I am not able to set my boundaries properly","tell me how to set my boundaries","Can you provide guidance on how to establish healthy boundaries?","I need advice on setting boundaries in my relationships, can you help?","What are some tips for defining and maintaining personal boundaries?","I cannot set my boundaries"],
+        "responses": ["Clearly communicate what is and isn't acceptable in your interactions.","Set boundaries that protect your well-being and mental health."," Maintain open, respectful dialogue about your boundaries.","Don't be afraid to decline requests or situations that infringe on your limits.","Acknowledge and honor the boundaries of those around you."]
+    },
+    {"tag": "healthy-lifestyle",
+        "patterns": ["Can you provide tips for maintaining a healthy lifestyle?","What are the key components of a healthy lifestyle?","How can I improve my diet for better health?"],
+        "responses": ["1. You can consume a variety of whole foods, including fruits, vegetables, lean proteins, and whole grains. Limit processed and sugary foods.\n2. Aim for at least 150 minutes of moderate-intensity aerobic activity per week, such as brisk walking, and incorporate strength training exercises two days a week.\n3. Prioritize 7-9 hours of quality sleep per night to support overall well-being and mental health.\n4. Practice stress-reduction techniques like mindfulness, meditation, or yoga to manage daily stressors effectively.\n5. Drink plenty of water throughout the day to maintain proper hydration and support bodily functions."]
+    },
+    {"tag": "anger",
+        "patterns": ["what is anger?","What is anger, and why do we experience it?","How can I tell if my anger is getting out of control?","What are the common triggers for anger?","explain anger","elaborate anger"],
+        "responses": ["Anger is a normal and natural human emotion. It is a strong feeling of displeasure, annoyance, or hostility that can be triggered by various factors, including perceived threats, frustrations, injustices, or conflicts. Anger can vary in intensity, from mild irritation to intense rage."]
+    },
+    {"tag": "anger-management-techniques",
+        "patterns": ["Can you suggest some anger management techniques I can try?","What are some breathing exercises that can help me calm down when I'm angry?","How can I practice mindfulness to control my anger?","anger management techniques"],
+        "responses": ["Some popular anger management techniques:\n1. Deep Breathing: Take slow, deep breaths to calm your body's physiological response to anger. Inhale deeply through your nose, hold for a few seconds, and then exhale slowly through your mouth.\n2. Mindfulness and Meditation: Mindfulness techniques and meditation can help you become more aware of your emotions and teach you to observe your anger without reacting impulsively.\n3. Time-Outs: If you feel anger rising, remove yourself from the situation or conversation for a short period. This can give you time to cool off and think more clearly.\n4. Counting to Ten: Counting to ten before reacting can help delay impulsive and aggressive responses, giving you time to gain control over your emotions.\n5. Physical Activity: Engaging in physical exercise can help release built-up tension and reduce anger. Regular exercise can also contribute to better emotional regulation."]
+    },
+    {"tag": "anger-identify",
+        "patterns": ["How can I identify the specific things that trigger my anger?","Are there common patterns or situations that make people angry?","do i have anger issues?","how to check if I have anger issues?","i want to check if I have anger issues or not","how to know if I have anger issues","can  my anger issues be identified"],
+        "responses": ["If you have anger issues then check if you have the following symptoms\n1. Frequent and Intense Anger: Individuals with anger issues often experience anger more frequently and intensely than others. They may become angry over relatively minor or trivial matters.\n2. Difficulty Controlling Anger: An inability to control or manage anger is a clear sign of anger issues. This may involve outbursts, yelling, or physical aggression.\n3. Physical Symptoms: Anger can manifest physically, leading to symptoms like a racing heart, clenched fists, muscle tension, and a flushed face.\n4. Destructive Behavior: People with anger issues may engage in destructive behavior, such as breaking objects, damaging property, or engaging in self-harm."]
+    },      
+    {"tag": "stress",
+        "patterns": ["what is stress?","explain stress","can you tell me about the stress"],
+        "responses": ["Stress is a natural and common response that your body has to various demands and challenges in your life. It is your body's way of reacting to a situation that it perceives as a threat, whether it's a physical, emotional, or psychological threat. Stress triggers a cascade of physiological and psychological changes in your body to help you respond to the perceived threat, often referred to as the 'fight or flight' response."]
+    },
+    {"tag": "stress-identify",
+        "patterns": ["How can I tell if I'm experiencing chronic stress?","What are the common symptoms of stress?","how to check if I am suffering from stress","Do i have stress?","Am I suffering from stress?","how to know if i have stress","can you tell me if I have stress","can you tell me if i am suffering from stress","what to do to check if I have stress or not?"],
+        "responses": ["You may have stress if you are suffering from the following symptoms\n1. Irritability: Feeling easily frustrated, agitated, or moody.\n2. Anxiety: Experiencing worry, restlessness, or a sense of dread.\n3. Difficulty Concentrating: Struggling to focus or make decisions.\n4. Emotional Swings: Rapid changes in emotions, from anger to sadness.\n5. Social Withdrawal: Avoiding social interactions and isolating oneself.\n6. Procrastination: Delaying tasks and responsibilities."]
+    },
+    {"tag": "stress-management-techniques",
+        "patterns": ["Can you suggest some stress management techniques I can try?","What are some breathing exercises that can help me calm down when I am in stress?","How can I practice mindfulness to control my stress?","stress management techniques"],
+        "responses": ["Here are some stress management techniques that may be helpful to you\n1. Healthy Diet: Eat a balanced and nutritious diet. Avoid excessive caffeine, sugar, and alcohol, which can exacerbate stress. Stay hydrated with plenty of water.\n2. Time Management: Organize your time and prioritize tasks. Break larger tasks into smaller, manageable steps. This can help reduce feelings of being overwhelmed.\n3. Relaxation Techniques: Explore relaxation methods such as visualization, guided imagery, or aromatherapy to calm your mind and reduce stress.\n4. Positive Self-Talk: Challenge negative self-talk and replace it with positive and constructive thoughts. Practice self-compassion and self-acceptance.\n5. Journaling: Keep a journal to express your thoughts and feelings. This can help you process your emotions and gain insight into your stress triggers.\n6. Deep Breathing: Practice deep, diaphragmatic breathing to help relax your body and mind. Inhale deeply through your nose, hold for a few seconds, and exhale slowly through your mouth. Repeat several times."]
+    },
+    {"tag": "breathing-technique",
+        "patterns": ["what is breathing technique?","explain breathing technique","tell me about breathing technique","elaborate breathing technique"],
+        "responses": ["Breathing techniques are specific methods and practices designed to help you control and optimize your breathing patterns. Proper breathing can have a significant impact on your physical and mental well-being."]
+    },
+    {"tag": "benefits-breathing-technique",
+        "patterns": ["what are benefits of breathing techniques?","benefits of breathing techniques","how helpful breathing techniques are?","How breathing techniques will help me?"],
+        "responses": ["Breathing techniques are helpful for tackling stress, Anxiety, and improve various aspects of life","It helps reducing stress, improving sleep, Pain management and tackle various mental health related issues"]
+    },
+    {"tag": "types-breathing-technique",
+        "patterns": ["various types of breathing technique","types of breathing technique","variation of breathing technique","how many types of breathing techniques are there"],
+        "responses": ["Well there is Deep Breathing, Diaphragmatic Breathing, 4-7-8 Breathing, Box Breathing and many more."]
+    },
+    {"tag": "deep-breathing",
+        "patterns": ["what is deep breathing?","explain deep breathing","tell me about deep breathing", "elaborate deep breathing"],
+        "responses": ["This technique involves taking slow, deep breaths to increase the flow of oxygen in your body and promote relaxation. It can help reduce stress and anxiety."]
+    },
+    {"tag": "muscle-relaxation-technique",
+        "patterns": ["what is muscle relaxation technique","explain muscle relaxation technique","tell me about muscle relaxation technique","what are the muscle relaxation techniques"],
+        "responses": ["Muscle relaxation techniques, also known as progressive muscle relaxation (PMR), are methods used to reduce tension and stress in the body by systematically relaxing different muscle groups. Developed by Edmund Jacobson in the early 20th century, this technique is based on the idea that physical relaxation can lead to mental and emotional relaxation. It's often used as a stress management and relaxation tool."]
+    },
+    {"tag": "benefits-muscle-relaxation-technique",
+        "patterns": ["what are benefits of muscle relaxation technique?","benefits of muscle relaxation technique","how helpful muscle relaxation technique are?","How muscle relaxation technique will help me?"],
+        "responses": ["muscle relaxation technique is helpful for Stress Reduction, Enhanced Relaxation, improves sleep, Pain relief, improves body awareness, Lowers blood pressure and many more"]
+    },
+    {"tag": "types-muscle-relaxation-technique",
+        "patterns": ["various types of muscle relaxation technique","types of muscle relaxation technique","variation of muscle relaxation technique","how many types of muscle relaxation techniques are there"],
+        "responses": ["Different types of muscle relaxation techniques are:\n1. Progressive Muscle Relaxation (PMR)\n2. Autogenic Training\n3. Jacobson's Relaxation Technique\n4. Cue-Controlled Relaxation"]
+    },
+    {"tag": "confidence",
+        "patterns": ["How to improve my confidence?","I have low confidence","I feel like I am not good enough as compared to others","I am not good enough","How to gain confidence?","How to be as good as others?","My confidence is very low"],
+        "responses": ["Having low confidence is common, but you should let it be in your way","If you want to improve your confidence then pratice self-compassion, set realistic goals and visualize success"]
+    },
+    {"tag": "addiction",
+        "patterns": ["I am having addiction of drugs", "I am addicted","I am having addiction of bad things","I am not able to leave my addiction","Addiction is bad","I am having severe addiction","I cannot leave my addiction"],
+        "responses": ["Addiction of anything is not good, As a friend I want you to leave it for good","Addiction destroys life my friend","Addiction will destroy your life","I want you to have an happy life without addiction"]
+    },
+    {"tag": "traumatic-event",
+        "patterns": ["I remembered bad event from my past","Suddenly I remembered traumatic event","traumatic event","I have trauma","I am traumatized","I am facing a trauma","My trauma's are haunting me","I had a bad past","My past is not good","I cannot forget the bad things"],
+        "responses": ["I know you are brave my friend, even if you have faced such events, you are still smiling. I want you cherish every happy moment of your life and forget about those bad events"] 
+    },
+    {"tag": "love",
+        "patterns": ["I want someone to love me","Nobody loves me","want love","craving for love","Can love heal me","Is love important in life","what is love","does love exists"],
+        "responses": ["Love does exist for everyone my friend, it's just that people try to find it at wrong places and feel down. If you crave for anyone's love then you should let them know about it but never lower your self esteem to achieve it because true love never lets you down in anyway."]
+    },
+    {"tag": "life-partner",
+        "patterns": ["I don't have any life partner", "what is the importance of life partner?","how should i choose my life partner","insecure about my life partner","I lost my life partner","help me finding the best life partner","can you get me a life partner","I want a life partner"],
+        "responses": ["Everyone should have a life partner, living alone can be boring na, the presence of life partner will get you through everything in life. Choose a partner that understands and knows that leaving is never an option"]
+    },
+    {"tag": "peer",
+        "patterns": ["I lost my peers","my peers left me","importance of peer","I want to make new friends","My peers make me feel bad","I am jealous of my peers","I feel bad around my peers"],
+        "responses": ["I know buddy, making new friends and having them for all the life is tough but with time you will meet great friends. Just have little bit of faith.","Having good peers is important but you should know whom to keep and whom to left."]
+    },
+    {"tag": "peer-gruop",
+        "patterns": ["I want to meet new peers","How to make a new peer group","I want to know how to make a new group","Can you tell me how to make new friends","tell me how to make new friends","do you know how i can make new friends","help me in making new freinds","I need help in making new friends"],
+        "responses": ["Sure, be approachable towards people around whom you feel good, be nice and express your interests in  front of them. Initiate conversation with them and let them know what type of person you are. I really hope that you make good friends."]
+    },
+    {"tag": "focus",
+        "patterns": ["I have low focus","I cannot focus properly","I am lacking focus","due to lack of focus I lost","I lost focus","I have bad focus","low focus","bad focus","can't focus properly","lost due to bad focus","Cannot focus","do I have bad focus","am i having focus issues"],
+        "responses": ["If you feel that you have bad focus, then you maybe suffering from anyone or multiple issues like procastination, constant distractions, lack of motivation, mind wandering, fatigue. Maybe I would be able to help more if you could tell me more about it. "]
+    },
+    {"tag": "relationships",
+        "patterns": ["I a   m in a bad relationship","I feel like I am in a bad relationship","bad relationship","How to know if I am in a bad relationship","tell me about bad relationship","what is a bad relation","bad relation","can you tell me if I am in a bad relation","what's a bad relation","bad relationship"],
+        "responses": ["If you are in a bad relation and you are feeling that you are being mentally drained then get out of it my friend."]
+    },
+    {"tag": "overcome-relationship",
+        "patterns": ["overcome bad relationship","cure bad relation","get out of bad relationship","help relation"],
+        "responses": ["If you want to heal yourselve then learn to acknowledge your situation and focus on self care.","Cut off such relation and focus on yourselve only."]
+    },
+    {"tag": "eating-disorder",
+        "patterns": ["I have eating disorder","eating disorder","suffering from eating disorder"],
+        "responses": ["Sad to hear that, let's change it. I want you start with a good nutritonal plan and recognize the problem that started all of this."]
+    },
+    {"tag": "work-life-balance",
+        "patterns": ["bad work life balance","work life balance","bad work life","tiring work life"],
+        "responses": ["Bro, I want you to make a good work management plan which will help you to decrease the work load and also help you work more efficiently"]
+    },
+    {"tag": "side-effects",
+        "patterns": ["side effects","have side effects","I have side effects of this medicine","this medicine had a side effect","i am having side effect","bad effects of this medicine","felt the side effects"],
+        "responses": ["This is very bad, you should go and get it checked from a specialist before it is too late.","what? seriously, go fast and get it checked from a specialist","I want you to go and get it check ASAP"]
+    },
+    {"tag": "procastination",
+        "patterns": ["procastination","I have a habit of procastinating","procastinating","procastinated","I procastinated today","I am procastinating","addicted to procastination","can't leave procastination"],
+        "responses": ["It's not a good habit, get a goal bro and make yourselve busy with work. Procastination will not help you in achieving anything.","Get a grip man, start working on yourselve.","It's high time now for you to start working on yourselve."]
+    },
+    {"tag": "distractions",
+        "patterns": ["feeling distracted","felt distracted","I am distracted"],
+        "responses": ["Tell me more exactly what is distracting you","Is there something major going on in your mind that is making you feel distracted","I got you, feel free to talk about it with me"]
+    },
+    {"tag": "overcome-distraction",
+        "patterns": ["want to overcome distraction","avoid distraction","remove distractions"," rid distractions","distraction free"],
+        "responses": ["If you want to get rid of distractions in your life then first identify the distraction sources, make a distraction free enviroment without them.","Make your work interesting by dividing them into smaller parts and doing them will make you feel fulfilled. For sure you will be less distracted after doing this."]
+    },
+    {"tag": "fatigue",
+        "patterns": ["feeling fatigue","high fatigue","less energy","more tired","maximum fatigue","handle fatigue","control fatigue"],
+        "responses": ["I would like to advice to have a adequate amount of sleep and start leading a heathly lifestyle.","Stop using screens so much and adopt a healthy lifestyle."]
+    },
+    {"tag": "discomfort",
+        "patterns": ["feeling discomfort","I am feeling discomfort","felt discomfort","feeling discomfortable","felt discomfortable"],
+        "responses": ["Don't worry I am here, tell me just what is it that is making you feel this way","I am all ears, tell me the reason for this discomfort","If you are comfortable to talk about it, I am all ears"]
+    },
+    {"tag": "mind-wandering",
+        "patterns": ["mind starts wandering","mind wanders around","mind not same place"],
+        "responses": ["I guess you are so carefree about life","It's not a good habit to have, learn to control your mind.","Wow, you have such good skill."]
+    },
+    
+    {"tag": "morning",
+        "patterns": ["Good morning"],
+        "responses": ["Good morning. I hope you had a good night's sleep. How are you feeling today? "]
+    }
+
+
+
+
+
+
+
+
+
+
+    ]
+}
+
+
